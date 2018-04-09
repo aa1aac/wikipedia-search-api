@@ -27,13 +27,19 @@ img:hover{
 }
 #button:hover{
     background-color: #ffffff;
+    transition-delay: 1.5s;
 }
 #button:focus{
     padding:10px 100px;
     transition: all ease 2s;
+    margin-bottom: 2%;
 }
-ul{
-    list-style-type:none;
-    margin:30px;
-    border-radius:20px;
-  }
+li{background-color:gold;
+    border-radius:10px;
+    padding:10px 10px;
+    margin:10px 10px;
+}
+li:hover{
+    background-color: floralwhite;
+    transition: all ease 1.5s;
+}
