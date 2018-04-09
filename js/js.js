@@ -7,14 +7,14 @@ searchItem.addEventListener("keypress",function(e){
         if (key === 13) {
             var input = $('.input').val();
   var apiUrl="https://en.wikipedia.org/w/api.php?action=opensearch&search="+input+"&format=json&callback=?";
-    
+    console.log (apiUrl);
      $.get(apiUrl)
       .done(function(data){
-          for(var i=0;i<10;i++){
-
+          for(var i=0;i<10;data[1][i].length){
           var result=data[1][i];
           var content=data[2][i];
-          searchList.html('<li class="container"><h1>'+result+'</h1><p class="container">'+content+'</p></li>')
+          var href=data[3][i];
+          searchList.html('<li class="container"><a href="'+href+'"><h1>'+result+'</h1></a><p class="container">'+content+'</p></li>')
 
           }
         })
