@@ -32,3 +32,8 @@ img:hover{
     padding:10px 100px;
     transition: all ease 2s;
 }
+ul{
+    list-style-type:none;
+    margin:30px;
+    border-radius:20px;
+  }
